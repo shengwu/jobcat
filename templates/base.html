@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>{% block title %}JobCat{% endblock title %}</title>
-  {% if debug %}
+  {% if not debug %}
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
   {% else %}
     <script src="{% static 'js/angular.js' %}"></script>
