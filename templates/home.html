@@ -1,19 +1,18 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block content %}
-<script src="{% static 'js/home.js' %}"></script>
 <div class="container" ng-controller="Home">
-  <div class="row">
+  <div class="row header">
     <div class="col-md-12">
       <div class="pull-right">
         <form class="form-inline" role="form">
           <div class="form-group">
-            <label class="sr-only" for="exampleInputEmail2">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+            <label class="sr-only" for="loginEmail">NetID or Email</label>
+            <input type="text" class="form-control" id="loginEmail" placeholder="Email or NetID">
           </div>
           <div class="form-group">
-            <label class="sr-only" for="exampleInputPassword2">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+            <label class="sr-only" for="loginPassword">Password</label>
+            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
           </div>
           <button type="submit" class="btn btn-default">Sign in</button>
         </form>
@@ -22,26 +21,19 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row jobcat-lead">
     <div class="col-md-12 text-center">
-      <p class="lead">JobCat connects busy Evanston residents
-    with Northwestern students who want to help.</p>
+      <p class="lead">JobCat connects busy Evanston residents<br>
+      with Northwestern students who want to help.</p>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-6 text-center">
-      <p>It's easy to list your services or find a job. Make an account in seconds with your NetID.</p>
-      <button type="button" class="btn btn-default btn-lg" ng-click="studentSignup = !studentSignup; residentSignup = false">I'm a student</button>
-    </div>
-    <div class="col-md-6 text-center">
-      <p>Want to post a job or hire a Wildcat? Sign up for free.</p>
-      <button type="button" class="btn btn-default btn-lg" ng-click="residentSignup = !residentSignup; studentSignup = false">I'm an Evanston resident</button>
-    </div>
-  </div>
-
-  <div class="row">
+  <div class="row jobcat-signup">
     <div class="col-md-6">
+      <div class="text-center">
+        <p class="lead">It's easy to list your services or find a job.<br>Make an account in seconds with your NetID.</p>
+        <button type="button" class="btn btn-default btn-lg" ng-click="studentSignup = !studentSignup; residentSignup = false" ng-hide="studentSignup">I'm a student</button>
+      </div>
       <form class="form-horizontal" role="form" ng-show="studentSignup">
         <div class="form-group">
           <label for="wcName" class="col-md-2 control-label">Name</label>
@@ -78,11 +70,15 @@
       </form>
     </div>
     <div class="col-md-6">
+      <div class="text-center">
+        <p class="lead">Want to post a job or hire a Wildcat?<br>Sign up for free.</p>
+        <button type="button" class="btn btn-default btn-lg" ng-click="residentSignup = !residentSignup; studentSignup = false" ng-hide="residentSignup">I'm an Evanston resident</button>
+      </div>
       <form class="form-horizontal" role="form" ng-show="residentSignup">
         <div class="form-group">
           <label for="wcName" class="col-md-2 control-label">Name</label>
           <div class="col-md-10">
-            <input type="text" class="form-control" id="wcName" placeholder="Martha Williams">
+            <input type="text" class="form-control" id="wcName" placeholder="Martha Evans">
           </div>
         </div>
         <div class="form-group">
@@ -168,11 +164,14 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row footer">
     <div class="col-med-12 text-center">
-      <p>JobCat is a service of Northwestern's Associated Student Government. Terms of Service | Contact Us</p>
+      <p>JobCat is a service of Northwestern's <a href="https://asg.northwestern.edu/" target="_blank">Associated Student Government</a>.<br>
+        <a href="#" class="footer-link">Terms of Service</a>
+        <a href="#" class="footer-link">Contact Us</a>
+      </p>
     </div>
   </div>
-
 </div>
+<script src="{% static 'js/home.js' %}"></script>
 {% endblock content %}
