@@ -29,7 +29,7 @@
   </div>
 
   <div class="row jobcat-signup">
-    <div class="col-md-6">
+    <div class="col-md-6" ng-class="{'highlight-purple': studentSignup}">
       <div class="text-center">
         <p class="lead">It's easy to list your services or find a job.<br>Make an account in seconds with your NetID.</p>
         <button type="button" class="btn btn-default btn-lg" ng-click="studentSignup = !studentSignup; residentSignup = false" ng-hide="studentSignup">I'm a student</button>
@@ -69,7 +69,7 @@
         </div>
       </form>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6" ng-class="{'highlight-blue': residentSignup}">
       <div class="text-center">
         <p class="lead">Want to post a job or hire a Wildcat?<br>Sign up for free.</p>
         <button type="button" class="btn btn-default btn-lg" ng-click="residentSignup = !residentSignup; studentSignup = false" ng-hide="residentSignup">I'm an Evanston resident</button>
@@ -115,23 +115,23 @@
     <div class="col-md-6">
       <h3 class="text-center">Latest Wildcat Services</h3>
       <div class="job-list">
-        <div class="job">
+        <div class="job wildcat-job">
           <p class="lead">Dog-sitting, Cat-sitting, House-sitting</p>
           <p><strong>$10</strong>/hour <span class="text-muted">Animal Care, Aug 23</span></p>
         </div>
-        <div class="job">
+        <div class="job wildcat-job">
           <p class="lead">Flexible with any kind of service needed that is on the Northwestern University campus.</p>
           <p><strong>$10</strong>/hour <span class="text-muted">Business &amp; Clerical, Aug 22</span></p>
         </div>
-        <div class="job">
+        <div class="job wildcat-job">
           <p class="lead">Tutoring</p>
           <p><strong>$50</strong>/hour <span class="text-muted">Education, Aug 21</span></p>
         </div>
-        <div class="job">
+        <div class="job wildcat-job">
           <p class="lead">Babysitting - WITH A CAR!!! (Beginning Sept 23)</p>
           <p><strong>$13</strong>/hour <span class="text-muted">Childcare, Aug 19</span></p>
         </div>
-        <div class="job">
+        <div class="job wildcat-job">
           <p class="lead">Babysitting</p>
           <p><strong>$13</strong>/hour <span class="text-muted">Childcare, Aug 16</span></p>
         </div>
@@ -140,23 +140,23 @@
     <div class="col-md-6">
       <h3 class="text-center">New Jobs in Evanston</h3>
       <div class="job-list">
-        <div class="job">
+        <div class="job evanston-job">
           <p class="lead">Morning (8-9) and afternoon (3:30-5) sitter needed for a great kid!</p>
           <p><strong>$15</strong>/hour <span class="text-muted">Childcare, Aug 23</span></p>
         </div>
-        <div class="job">
+        <div class="job evanston-job">
           <p class="lead">Evening/Weekend Babysitter for 2 Children in Winnetka</p>
           <p><strong>$10</strong>/hour <span class="text-muted">Childcare, Aug 22</span></p>
         </div>
-        <div class="job">
+        <div class="job evanston-job">
           <p class="lead">Sitter starting sept 8</p>
           <p><strong>$15</strong>/hour <span class="text-muted">Childcare, Aug 22</span></p>
         </div>
-        <div class="job">
+        <div class="job evanston-job">
           <p class="lead">Nanny needed 5 days a week for a local teacher</p>
           <p><strong>$15</strong>/hour <span class="text-muted">Childcare, Aug 21</span></p>
         </div>
-        <div class="job">
+        <div class="job evanston-job">
           <p class="lead">Babysitter</p>
           <p><strong>$15</strong>/hour <span class="text-muted">Childcare, Aug 21</span></p>
         </div>

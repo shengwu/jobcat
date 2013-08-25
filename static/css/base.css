@@ -1,7 +1,16 @@
+/* global styels */
 html {
     overflow-y: scroll;
 }
 
+.highlight-blue {
+    background-color: #ddeeff;
+}
+.highlight-purple {
+    background-color: #e2ccf3;
+}
+
+/* header */
 .header {
     background-color: #f0f0f0;
     padding-bottom: 5px;
@@ -11,6 +20,7 @@ html {
     margin-bottom: 5px;
 }
 
+/* lead text */
 .jobcat-lead {
     padding: 30px 0 0;
 }
@@ -18,13 +28,17 @@ html {
     font-size: 36px;
 }
 
-.jobcat-signup {
-    margin-bottom: 30px;
+/* signup boxes */
+.jobcat-signup .col-md-6 {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 .jobcat-signup .lead {
-    margin-top: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
 }
 
+/* jobs lists on homepage */
 .homepage-jobs {
     border-top: 1px solid #ddd;
     margin-bottom: 20px;
@@ -33,7 +47,10 @@ html {
 .job {
     padding: 8px 40px;
 }
-.job:hover {
+.wildcat-job:hover {
+    background-color: #e2ccf3;
+}
+.evanston-job:hover {
     background-color: #ddeeff;
 }
 .job p,
@@ -44,6 +61,7 @@ html {
     font-size: 19px;
 }
 
+/* footer */
 .footer {
     padding-top: 10px;
     background-color: #f0f0f0;
