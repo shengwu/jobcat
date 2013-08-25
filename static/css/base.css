@@ -1,0 +1,57 @@
+html {
+    overflow-y: scroll;
+}
+
+.header {
+    background-color: #f0f0f0;
+    padding-bottom: 5px;
+}
+.header button,
+.header .form-group {
+    margin-bottom: 5px;
+}
+
+.jobcat-lead {
+    padding: 30px 0 0;
+}
+.jobcat-lead .lead {
+    font-size: 36px;
+}
+
+.jobcat-signup {
+    margin-bottom: 30px;
+}
+.jobcat-signup .lead {
+    margin-top: 20px;
+}
+
+.homepage-jobs {
+    border-top: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.job {
+    padding: 8px 40px;
+}
+.job:hover {
+    background-color: #ddeeff;
+}
+.job p,
+.job .lead {
+    margin-bottom: 0;
+}
+.job .lead {
+    font-size: 19px;
+}
+
+.footer {
+    padding-top: 10px;
+    background-color: #f0f0f0;
+}
+.footer-link {
+    padding-right: 6px;
+}
+.footer-link + .footer-link {
+    padding-left: 8px;
+    border-left: 1px solid #aaa;
+}
