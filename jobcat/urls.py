@@ -5,8 +5,8 @@ from django.conf.urls import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+    url(r'^$', 'jobcat.views.home'),
     # Examples:
-    url(r'^$', include('app.urls')),
     # url(r'^jobcat/', include('jobcat.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
