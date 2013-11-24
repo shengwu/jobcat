@@ -2,9 +2,21 @@
 html {
     overflow-y: scroll;
 }
+body {
+    font-family: 'Source Sans Pro' !important;
+    background-color: #555;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Slab';
+}
 
 .highlight-blue {
-    background-color: #e3faff;
+    background-color: #9dc7f0;
 }
 .highlight-purple {
     background-color: #eee9ff;
@@ -12,9 +24,8 @@ html {
 
 /* header */
 .header {
-    background-color: #f0f0f0;
+    background-color: #9dc7f0;
     padding-bottom: 5px;
-    border-bottom: 1px solid #ddd;
 }
 .header button,
 .header .form-group {
@@ -24,15 +35,19 @@ html {
 /* lead text */
 .jobcat-lead {
     padding: 30px 0 0;
+    background-color: white;
 }
-.jobcat-lead .lead {
-    font-size: 36px;
+.jobcat-lead h1 {
+    margin-bottom: 30px;
 }
 
 /* signup boxes */
+.jobcat-signup {
+    background-color: white;
+}
 .jobcat-signup .col-md-6 {
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 .jobcat-signup .lead {
     margin-top: 10px;
@@ -41,10 +56,9 @@ html {
 
 /* jobs lists on homepage */
 .homepage-jobs {
-    border-top: 1px solid #ddd;
     padding-bottom: 20px;
     padding-top: 10px;
-    background: #f0f0f0;
+    background-color: #f3f3f3;
 }
 .job {
     padding: 8px 40px;
@@ -53,7 +67,7 @@ html {
     background-color: #eee9ff;
 }
 .evanston-job:hover {
-    background-color: #e3faff;
+    background-color: #9dc7f0;
 }
 .job p,
 .job .lead {
@@ -66,7 +80,7 @@ html {
 /* footer */
 .footer {
     padding-top: 10px;
-    background-color: #e0e0e0;
+    background-color: #d3d3d3;
 }
 .footer-link {
     padding-right: 6px;
