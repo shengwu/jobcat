@@ -15,6 +15,10 @@ h6 {
     font-family: 'Roboto Slab';
 }
 
+.whitebg {
+    background-color: white;
+}
+
 .highlight-blue {
     background-color: #9dc7f0;
 }
@@ -60,13 +64,13 @@ h6 {
     padding-top: 10px;
     background-color: #f3f3f3;
 }
-.job {
+.homepage-jobs .job {
     padding: 8px 40px;
 }
-.wildcat-job:hover {
+.homepage-jobs .wildcat-job:hover {
     background-color: #eee9ff;
 }
-.evanston-job:hover {
+.homepage-jobs .evanston-job:hover {
     background-color: #9dc7f0;
 }
 .job p,

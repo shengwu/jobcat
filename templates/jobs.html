@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="container">
+  <div class="row header">
+    <div class="col-md-12">
+      <div class="pull-right" style="margin-top: 10px;">
+        <button class="btn btn-default btn-large">Log out</button>
+      </div>
+      <img src="{% static 'jobcat_logo.png' %}" alt="" height="40" style="margin: 5px 0 5px;">
+    </div>
+  </div>
+
+  <div class="row whitebg">
+    <div class="col-md-3">
+      <h3>My listings</h3>
+      <div class="my-jobs">
+      
+      </div>
+    </div>
+    <div class="col-md-9">
+      <h2>Posted jobs and services</h2>
+    
+      <div class="posted-jobs">
+        <div class="job evanston-job">
+          <p class="lead">Morning (8-9) and afternoon (3:30-5) sitter needed for a great kid!</p>
+          <p><strong>$15</strong>/hour <span class="text-muted">Childcare, Aug 23</span></p>
+        </div>
+        <div class="job evanston-job">
+          <p class="lead">Evening/Weekend Babysitter for 2 Children in Winnetka</p>
+          <p><strong>$10</strong>/hour <span class="text-muted">Childcare, Aug 22</span></p>
+        </div>
+        <div class="job evanston-job">
+          <p class="lead">Sitter starting sept 8</p>
+          <p><strong>$15</strong>/hour <span class="text-muted">Childcare, Aug 22</span></p>
+        </div>
+        <div class="job evanston-job">
+          <p class="lead">Nanny needed 5 days a week for a local teacher</p>
+          <p><strong>$15</strong>/hour <span class="text-muted">Childcare, Aug 21</span></p>
+        </div>
+        <div class="job evanston-job">
+          <p class="lead">Babysitter</p>
+          <p><strong>$15</strong>/hour <span class="text-muted">Childcare, Aug 21</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock content %}
