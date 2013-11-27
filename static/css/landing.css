@@ -1,8 +1,8 @@
 .highlight-blue {
-    background-color: #9dc7f0;
+    background-color: #c8e4ff;
 }
 .highlight-purple {
-    background-color: #eee9ff;
+    background-color: #e6dfff;
 }
 
 /* lead text */
@@ -37,10 +37,10 @@
     padding: 8px 40px;
 }
 .wildcat-job:hover {
-    background-color: #eee9ff;
+    background-color: #ece6ff;
 }
 .evanston-job:hover {
-    background-color: #9dc7f0;
+    background-color: #c8e4ff;
 }
 .job p,
 .job .lead {
