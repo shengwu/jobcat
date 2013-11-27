@@ -5,6 +5,7 @@
   <div class="row header">
     <div class="col-md-12">
       <div class="pull-right" style="margin-top: 10px;">
+        <button class="btn btn-default btn-large">Settings</button>
         <button class="btn btn-default btn-large">Log out</button>
       </div>
       <img src="{% static 'jobcat_logo.png' %}" alt="" height="40" style="margin: 5px 0 5px;">
@@ -12,13 +13,17 @@
   </div>
 
   <div class="row whitebg">
-    <div class="col-md-3">
+    <div class="col-md-4">
       <h3>My listings</h3>
       <div class="my-jobs">
+        <div class="alert alert-info text-center">
+          You haven't posted any jobs yet.<br>
+          <a class="alert-link" href="#">Post your first job</a>
+        </div>
       
       </div>
     </div>
-    <div class="col-md-9">
+    <div class="col-md-8">
       <h2>Posted jobs and services</h2>
     
       <div class="posted-jobs">
@@ -28,7 +33,7 @@
         </div>
         <div class="job evanston-job">
           <p class="lead">Evening/Weekend Babysitter for 2 Children in Winnetka</p>
-          <p><strong>$10</strong>/hour <span class="text-muted">Childcare, Aug 22</span></p>
+          <p><strong>$10</strong>/hour <span class="text-muted">Childcare, posted Aug 22</span></p>
         </div>
         <div class="job evanston-job">
           <p class="lead">Sitter starting sept 8</p>
