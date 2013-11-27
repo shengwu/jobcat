@@ -1,0 +1,10 @@
+.job {
+    padding: 4px 6px 6px;
+}
+.job p {
+    margin-bottom: 0;
+}
+.job:hover {
+    background: #f0f0f0;
+    cursor: pointer;
+}

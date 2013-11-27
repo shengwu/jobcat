@@ -33,20 +33,20 @@
     padding-top: 10px;
     background-color: #f3f3f3;
 }
-.homepage-jobs .job {
+.job {
     padding: 8px 40px;
 }
-.homepage-jobs .wildcat-job:hover {
+.wildcat-job:hover {
     background-color: #eee9ff;
 }
-.homepage-jobs .evanston-job:hover {
+.evanston-job:hover {
     background-color: #9dc7f0;
 }
-.homepage-jobs .job p,
-.homepage-jobs .job .lead {
+.job p,
+.job .lead {
     margin-bottom: 0;
 }
-.homepage-jobs .job .lead {
+.job .lead {
     font-size: 19px;
 }
 
