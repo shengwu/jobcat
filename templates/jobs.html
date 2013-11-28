@@ -14,26 +14,31 @@
   </div>
 
   <div class="row whitebg">
-    <div class="col-md-4">
+    <div ng-class="{'col-md-4': !editMode, 'col-md-6': editMode}">
       <h3>My listings</h3>
       <div class="my-jobs">
-        <div class="alert alert-info text-center">
+        <div class="alert alert-info text-center no-jobs" ng-class="{hide: editMode}">
           You haven't posted any jobs yet.<br>
-          <a class="alert-link" href="#">Post your first job</a>
+          <a class="alert-link" href="#" ng-click="editMode = !editMode">Post your first job</a>
         </div>
-      
+      </div>
+
+      <!-- create or edit a job -->
+      <div class="edit-job" ng-class="{hide: !editMode}">
+        <h4>Post a new job</h4>
+        {% include 'form.html' %}
       </div>
     </div>
 
-    <div class="col-md-8">
+    <div ng-class="{'col-md-8': !editMode, 'col-md-6': editMode}">
       <h2>Posted jobs and services</h2>
       <div class="posted-jobs">
         <div class="job evanston-job" ng-repeat="job in jobs" ng-click="job.expanded = !job.expanded">
           <p class="lead">[[ job.title ]]</p>
           <p class="desc" ng-class="{hide: !job.expanded}">[[ job.description ]]</p>
           <p>
+            <span class="pull-right clearfix">Respond to post &nbsp; See details</span>
             <strong>$[[ job.pay_amount ]]</strong>/hour <span class="text-muted">[[ job.category ]], [[ job.post_date ]]</span>
-            <span class="pull-right">Respond to post &nbsp; See details</span>
           </p>
         </div>
       </div>

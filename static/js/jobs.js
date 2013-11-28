@@ -1,5 +1,7 @@
 angular.module('jobcat').controller('Jobs', ['$scope', function($scope) {
     $scope.jobs;
+    $scope.services;
+    $scope.myJobs;
     $scope.editMode = false;
 
     $scope.jobs = [
