@@ -8,3 +8,6 @@
     background: #f0f0f0;
     cursor: pointer;
 }
+.job .desc {
+    margin: 8px;
+}
