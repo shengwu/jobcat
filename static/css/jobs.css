@@ -8,6 +8,28 @@
     background: #f0f0f0;
     cursor: pointer;
 }
+.job-expanded {
+    background: #f0f0f0;
+}
+.job-expanded:hover {
+    background: #e7e7e7;
+}
+
 .job .desc {
     margin: 8px;
+}
+
+.job-respond label {
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 8px;
+}
+.job-respond {
+    background: #d8eaff;
+}
+
+
+.main {
+    padding-bottom: 50px;
 }
